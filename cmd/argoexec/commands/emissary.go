@@ -177,6 +177,7 @@ func NewEmissaryCommand() *cobra.Command {
 
 			if cmdErr == nil {
 				exitCode = 0
+				//test
 			} else if exitError, ok := cmdErr.(errors.Exited); ok {
 				if exitError.ExitCode() >= 0 {
 					exitCode = exitError.ExitCode()
